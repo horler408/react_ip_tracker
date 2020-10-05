@@ -13,7 +13,7 @@ export default function DetailPage({ ip, isp, location, timezone }) {
       </div>
       <div className="details_time-zone">
         <h6 className="details_title">TIMEZONE</h6>
-        <p className="time_zone">{timezone}</p>
+        <p className="time_zone">GMT {timezone}</p>
       </div>
       <div className="details_isp">
         <h6 className="details_title">ISP</h6>

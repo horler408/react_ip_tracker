@@ -1,6 +1,7 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 import LocationPin from "./LocationPin";
+import key from "./config/keys";
 
 class SimpleMap extends React.Component {
   static defaultProps = {
@@ -15,7 +16,7 @@ class SimpleMap extends React.Component {
     return (
       <div style={{ height: "100vh", width: "100%" }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyBocOVRX1P8cSj1fxMqkMsyGOS0j5aJUXE" }}
+          bootstrapURLKeys={{ key: key.google }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >

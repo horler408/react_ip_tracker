@@ -66,6 +66,7 @@ function App() {
         <div className="search">
           <input
             type="text"
+            name="search"
             className="search-input"
             placeholder="Search for any IP address or domain"
             value={search}
