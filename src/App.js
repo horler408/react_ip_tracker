@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import DetailPage from "./components/assets/details";
+import arrow from "./components/assets/icon-arrow.svg";
+import DetailPage from "./components/details";
 import Map from "./components/maps";
 
 function App() {
@@ -71,7 +72,7 @@ function App() {
             onChange={(e) => setSearch(e.target.value)}
           />
           <button onClick={getSearch} className="search_button" type="submit">
-            <img src="./" alt="Search Arrow" />
+            <img src={arrow} alt="Search Arrow" />
           </button>
         </div>
       </div>
